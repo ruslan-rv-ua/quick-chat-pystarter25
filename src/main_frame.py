@@ -3,12 +3,9 @@ import wx.html2
 from ObjectListView3 import ColumnDefn, ObjectListView
 
 
-from webview_marked import WebviewMarked
-
-
-class MainWindow(wx.Frame):
-    def __init__(self, *args, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
+class MainFrame(wx.Frame):
+    def __init__(self):
+        super().__init__(parent=None, title="Quick Chat")
         self.init_ui()
 
     def init_ui(self):
@@ -34,4 +31,3 @@ class MainWindow(wx.Frame):
         main_sizer.Add(self.webview, 2, wx.EXPAND | wx.ALL, 5)
         panel.SetSizer(main_sizer)
         self.Maximize()
-        

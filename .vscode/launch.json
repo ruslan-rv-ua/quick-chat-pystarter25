@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Запуск проекта",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.py", // Шлях до вашого файлу
+            // "cwd": "${workspaceFolder}/src", // Поточна робоча папка для скрипта
+            // "python": "${workspaceFolder}/.venv/Scripts/python.exe", // Шлях до інтерпретатора venv (Windows)
+            "console": "integratedTerminal",
+            // "console": "externalTerminal",
+            "justMyCode": true
+        }
+    ]
+}
