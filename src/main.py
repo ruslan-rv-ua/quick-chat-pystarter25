@@ -1,12 +1,12 @@
 import wx
 
-from main_frame import MainFrame
+from gui.main_frame import MainFrame
 
 
 def main():
     app = wx.App()
     frame = MainFrame()
-    frame.Show(True)
+    frame.Show()
     app.MainLoop()
 
 
